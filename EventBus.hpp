@@ -5,7 +5,6 @@
 #include <unordered_map>
 #include <typeindex>
 #include <algorithm>
-#include <iostream>
 
 struct Event {
     bool handled{false};
