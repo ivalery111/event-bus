@@ -10,6 +10,7 @@ TEST_CASE("Publusher Die") {
 
     struct Inc {
         void inc_count(EventInc& inc) {
+            (void)inc; // unused
             ++count;
         }
     };

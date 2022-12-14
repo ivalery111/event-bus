@@ -10,6 +10,7 @@ TEST_CASE("PublishSubscribeTest") {
     
     struct Incrementator {
         void increment_count(EventIncrementator& incrementator) {
+            (void)incrementator; // unused
             ++count;
         }
     };
