@@ -9,6 +9,10 @@ include(CompilerFlags)
 add_library(project_flags INTERFACE)
 set_compiler_flags(project_flags)
 
+include(Sanitizers)
+add_library(sanitizers INTERFACE)
+enable_sanitizers(sanitizers)
+
 add_library(event_bus INTERFACE)
 target_include_directories(event_bus INTERFACE .)
 target_link_libraries(event_bus INTERFACE project_flags)
